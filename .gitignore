@@ -1,2 +1,15 @@
+# node_modules
 node_modules/*
+
+# Editor settings
 .vscode/*
+
+# Debug logs
+npm-debug.log
+yarn-error.log
+
+# system
+.DS_Store
+
+# env variables
+.env
