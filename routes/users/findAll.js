@@ -1,7 +1,7 @@
 module.exports = {
   method: 'GET',
   path: '/',
-  handler: async(ctx) => {
+  handler: async (ctx) => {
     const { models: { User } } = ctx;
     console.log('USERS routes');
     const users = await User.findAll();
@@ -12,5 +12,5 @@ module.exports = {
     };
 
     ctx.status = 200;
-  }
+  },
 };

@@ -8,12 +8,12 @@ module.exports = (sequelize, DataTypes) => {
       get() {
         return `${this.firstName} ${this.lastName}`;
       },
-      set(value) {
+      set(value) { // eslint-disable-line
         throw new Error('Do not try to set the `fullName` value!');
       },
-    }
+    },
   }, {});
-  User.associate = function(models) {
+  User.associate = function(models) { // eslint-disable-line
     // associations can be defined here
   };
   return User;

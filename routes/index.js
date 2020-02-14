@@ -7,7 +7,7 @@ homeRouter.prefix('');
 homeRouter.route(homeRoute);
 
 const userRouter = router();
-userRouter.prefix('/users');
+userRouter.prefix('/users/');
 userRouter.route(userRoutes);
 
 module.exports = [

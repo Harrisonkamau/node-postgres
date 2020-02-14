@@ -1,4 +1,4 @@
-const faker = require('faker');
+const faker = require('faker'); // eslint-disable-line
 
 const createUsers = () => ([
   {
@@ -14,15 +14,15 @@ const createUsers = () => ([
     email: faker.internet.email(),
     createdAt: new Date(),
     updatedAt: new Date(),
-  }
+  },
 ]);
 
 module.exports = {
-  up: (queryInterface, Sequelize) => {
-   return queryInterface.bulkInsert('Users', createUsers());
+  up(queryInterface, Sequelize) { // eslint-disable-line
+    return queryInterface.bulkInsert('Users', createUsers());
   },
 
-  down: (queryInterface, Sequelize) => {
-   return queryInterface.bulkDelete('Users', null, {});
-  }
+  down(queryInterface, Sequelize) { // eslint-disable-line
+    return queryInterface.bulkDelete('Users', null, {});
+  },
 };

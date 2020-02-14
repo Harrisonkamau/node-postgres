@@ -19,12 +19,23 @@
     "sequelize": "^5.21.4"
   },
   "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-subset": "^1.6.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-chai-expect": "^2.1.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-mocha": "^6.2.2",
     "faker": "^4.1.0",
+    "mocha": "^7.0.1",
     "nodemon": "^2.0.2",
-    "sequelize-cli": "^5.5.1"
+    "sequelize-cli": "^5.5.1",
+    "sinon": "^8.1.1",
+    "supertest": "^4.0.2"
   },
   "scripts": {
     "dev": "nodemon lib/index.js",
+    "lint": "./node_modules/.bin/eslint .",
     "db:migrate": "npx sequelize-cli db:migrate",
     "model:generate": "npx sequelize-cli model:generate",
     "seed:generate": "npx sequelize-cli seed:generate",
