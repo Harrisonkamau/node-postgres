@@ -12,17 +12,22 @@
     "dotenv": "^8.2.0",
     "koa": "^2.11.0",
     "koa-joi-router": "^6.0.1",
+    "lodash": "^4.17.15",
     "pg": "^7.18.1",
     "pg-hstore": "^2.3.3",
+    "require-directory": "^2.1.1",
     "sequelize": "^5.21.4"
   },
   "devDependencies": {
+    "faker": "^4.1.0",
     "nodemon": "^2.0.2",
     "sequelize-cli": "^5.5.1"
   },
   "scripts": {
     "dev": "nodemon lib/index.js",
     "db:migrate": "npx sequelize-cli db:migrate",
-    "model:generate": "npx sequelize-cli model:generate"
+    "model:generate": "npx sequelize-cli model:generate",
+    "seed:generate": "npx sequelize-cli seed:generate",
+    "db:seed": "npx sequelize-cli db:seed:all"
   }
 }
