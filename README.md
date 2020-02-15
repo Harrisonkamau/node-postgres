@@ -67,3 +67,14 @@ yarn dev
 # else - for NPM users
 npm run dev
 ```
+
+## Having trouble resetting migrations?
+There are several yarn scripts to undo migrations:
+
+**If you want to manually create users table**
+
+```sh
+# in case you need to manually create 'users' table
+psql -h localhost -d node-sequel_development -q -f sql/create-users-table.sql
+```
+The `sql` folder located at the root of the app has more SQL commands.
