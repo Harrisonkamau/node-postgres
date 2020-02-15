@@ -12,7 +12,9 @@ module.exports = (sequelize, DataTypes) => {
         throw new Error('Do not try to set the `fullName` value!');
       },
     },
-  }, {});
+  }, {
+    tableName: 'users',
+  });
   User.associate = function(models) { // eslint-disable-line
     // associations can be defined here
   };

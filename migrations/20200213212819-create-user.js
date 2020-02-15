@@ -1,6 +1,6 @@
 module.exports = {
   up(queryInterface, Sequelize) {
-    return queryInterface.createTable('Users', {
+    return queryInterface.createTable('users', {
       id: {
         allowNull: false,
         autoIncrement: true,
@@ -26,7 +26,7 @@ module.exports = {
       },
     });
   },
-  down: (queryInterface, Sequelize) => { // eslint-disable-line
-    return queryInterface.dropTable('Users');
+  down(queryInterface, Sequelize) { // eslint-disable-line
+    return queryInterface.dropTable('users');
   },
 };
