@@ -42,6 +42,7 @@
     "dev": ". .local-scripts/export-vars.sh && ./node_modules/.bin/nodemon lib/index.js",
     "lint": "./node_modules/.bin/eslint .",
     "db:migrate": "npx sequelize-cli db:migrate",
+    "migration:generate": "npx sequelize-cli migration:generate",
     "model:generate": "npx sequelize-cli model:generate",
     "seed:generate": "npx sequelize-cli seed:generate",
     "db:seed": "npx sequelize-cli db:seed:all"

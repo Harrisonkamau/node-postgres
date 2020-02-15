@@ -30,6 +30,13 @@ Run:
 yarn db:migrate
 ```
 
+## Generating new Migrations
+To generate a new migration file, run:
+```sh
+# pass the right migration name here
+yarn migration:generate --name migrationFileName
+```
+
 ## Create new Models
 You may wish to create your own model(s) out of curiosity. Well, there's a command for you in place:
 
