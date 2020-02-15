@@ -6,6 +6,4 @@ const options = {
   recurse: false,
 };
 
-const files = requireDirectory(module, options);
-console.log(files);
-module.exports = _.values(files);
+module.exports = _.values(requireDirectory(module, options));

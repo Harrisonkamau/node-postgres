@@ -1,9 +1,8 @@
 module.exports = {
-  method: 'GET',
+  method: 'get',
   path: '/',
   handler: async (ctx) => {
     const { models: { User } } = ctx;
-    console.log('USERS routes');
     const users = await User.findAll();
     ctx.assert(users.length, 400, 'No users found at this time');
     ctx.body = {
