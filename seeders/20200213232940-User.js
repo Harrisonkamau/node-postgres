@@ -19,10 +19,10 @@ const createUsers = () => ([
 
 module.exports = {
   up(queryInterface, Sequelize) { // eslint-disable-line
-    return queryInterface.bulkInsert('Users', createUsers());
+    return queryInterface.bulkInsert('users', createUsers());
   },
 
   down(queryInterface, Sequelize) { // eslint-disable-line
-    return queryInterface.bulkDelete('Users', null, {});
+    return queryInterface.bulkDelete('users', null, {});
   },
 };
