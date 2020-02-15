@@ -11,8 +11,13 @@
     "config": "^3.2.5",
     "dotenv": "^8.2.0",
     "koa": "^2.11.0",
-    "koa-joi-router": "^6.0.1",
+    "koa-bodyparser": "^4.2.1",
+    "koa-joi-router": "6.0.0",
+    "koa-logger": "^3.2.1",
+    "koa-qs": "^2.0.0",
+    "koa-query": "^0.0.6",
     "lodash": "^4.17.15",
+    "loggery": "^1.0.2",
     "pg": "^7.18.1",
     "pg-hstore": "^2.3.3",
     "require-directory": "^2.1.1",
@@ -34,7 +39,7 @@
     "supertest": "^4.0.2"
   },
   "scripts": {
-    "dev": "nodemon lib/index.js",
+    "dev": ". .local-scripts/export-vars.sh && ./node_modules/.bin/nodemon lib/index.js",
     "lint": "./node_modules/.bin/eslint .",
     "db:migrate": "npx sequelize-cli db:migrate",
     "model:generate": "npx sequelize-cli model:generate",

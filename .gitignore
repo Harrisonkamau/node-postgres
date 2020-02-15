@@ -13,3 +13,6 @@ yarn-error.log
 
 # env variables
 .env
+
+# local scripts
+.local-scripts/*
