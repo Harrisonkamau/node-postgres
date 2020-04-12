@@ -1,7 +1,5 @@
-const { expect, models } = require('../setup');
+const { expect, models: { User } } = require('../setup');
 const { users } = require('../seedData');
-
-const { User } = models;
 
 describe('User', () => {
   describe('schema validations', () => {
