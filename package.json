@@ -10,6 +10,7 @@
   "dependencies": {
     "config": "^3.2.5",
     "dotenv": "^8.2.0",
+    "factory-girl": "^5.0.4",
     "koa": "^2.11.0",
     "koa-bodyparser": "^4.2.1",
     "koa-joi-router": "6.0.0",
@@ -47,6 +48,7 @@
     "migration:generate": "npx sequelize-cli migration:generate",
     "model:generate": "npx sequelize-cli model:generate",
     "seed:generate": "npx sequelize-cli seed:generate",
-    "db:seed": "npx sequelize-cli db:seed:all"
+    "db:seed": "npx sequelize-cli db:seed:all",
+    "test": "export NODE_ENV=test && ./node_modules/.bin/mocha --timeout=10000 --recursive --exit tests"
   }
 }
