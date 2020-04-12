@@ -1,7 +1,9 @@
 const chai = require('chai');
 const chaiSubset = require('chai-subset');
-const { sequelize: { models } } = require('../models');
+const db = require('../models');
 const createApp = require('../lib/createApp');
+
+const { sequelize: { models } } = db;
 
 chai.use(chaiSubset);
 
@@ -13,4 +15,5 @@ module.exports = {
   models,
   testPort,
   createApp,
+  db,
 };
