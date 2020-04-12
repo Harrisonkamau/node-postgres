@@ -48,6 +48,15 @@ Run:
 yarn db:migrate
 ```
 
+**Querying all migrations already run**
+
+Sequelize keeps track of all migrations that have been run. This information is saved in the `SequelizeMeta` table.
+
+Run this command to view them:
+```sh
+psql -h localhost -d node-sequel_development -q -f sql/migrations.sql
+```
+
 ### Create new Models
 You may wish to create your own model(s) out of curiosity. Well, there's a command for you in place:
 
